@@ -16,7 +16,17 @@ app.use("/api", api);
 app.get("/", (req, res) => res.sendFile("Navigate to /notes or /routes"));
 app.get("/notes", (req, res) => res.sendFile(path.join(__dirname, "/public/notes.html")));
 
-app.get("/api", (req, res) => {res.json(db)});
+app.get("/api/notes", (req, res) => {res.json(db)});
+app.get("/api/notes/:title", (req, res) => {
+	console.log(req.params);
+	const requestedTitles = req.params.title.toLowerCase();
+	const foundTitle = db.filter(
+		(termObj) => termObj.term.toLowerCase() === requestedTitles
+	)[0];
+	console.log(foundTitle);
+	if (requestedTerm === db[i].title.toLowerCase()) {return res.json(db[i])}
+});
+
 app.get("*", (req, res) => res.send("File Not Found"));
 
 app.listen(PORT, () =>
