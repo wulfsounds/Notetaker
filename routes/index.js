@@ -1,4 +1,5 @@
 const express = require('express');
+const index = require('express').Router();
 
 const notesRouter = require('./notes');
 const dbRouter = require('./db');
