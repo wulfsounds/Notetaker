@@ -1,8 +1,5 @@
 [
-    {
-        "title": "Test Title",
-        "text": "Test text"
-    },
+ 
     {
         "title": "FIRST NOTE",
         "text": "I am writing a note to test the save function!"
@@ -14,45 +11,5 @@
     {
         "title": "Lorem Ipsum",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        "title": "dzvxgh",
-        "text": "dsvfgmn"
-    },
-    {
-        "title": "esfg",
-        "text": "dsfg"
-    },
-    {
-        "title": "ads",
-        "text": "a"
-    },
-    {
-        "title": "sdfgh",
-        "text": "sdfgnfds"
-    },
-    {
-        "title": "asdbfg",
-        "text": "sadb"
-    },
-    {
-        "title": "dsfgn",
-        "text": "sdf"
-    },
-    {
-        "title": "asd",
-        "text": "sdfb"
-    },
-    {
-        "title": "ds",
-        "text": "dn"
-    },
-    {
-        "title": "dsfn",
-        "text": "dsn "
-    },
-    {
-        "title": "xzc",
-        "text": "xzc"
     }
 ]
