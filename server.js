@@ -24,23 +24,23 @@ app.get("/api/notes", (req, res) => {
 	return res.json(db);
 });
 
-// // POST request method to add note;
-// app.post('/api/notes', (req, res) => {
-// 	let response;
-// 	const { title, text } = req.body;
-// 	if (title && text) {
-// 		const newNote = {title, text};
-// 		response = {
-// 			status: 'Success',
-// 			body: newNote
-// 		};
-// 		readAndAppend(newNote, './db/db.json');
-// 		console.log(response);
-// 		res.status(201).json(response);
-// 	} else {
-// 		res.status(500).json('Error in posting note')
-// 	}
-// })
+// POST request method to add note;
+app.post('/api/notes', (req, res) => {
+	let response;
+	const { title, text } = req.body;
+	if (title && text) {
+		const newNote = {title, text};
+		response = {
+			status: 'Success',
+			body: newNote
+		};
+		readAndAppend(newNote, './db/db.json');
+		console.log(response);
+		res.status(201).json(response);
+	} else {
+		res.status(500).json('Error in posting note')
+	}
+})
 
 // app.post('/notes', (req, res) => {
 // 	let response;
