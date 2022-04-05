@@ -1,12 +1,10 @@
 const express = require("express");
 const index = require("express").Router();
 
-const notesRouter = require("./notes");
-const dbRouter = require("./db");
+const dbRouter = require("./notes");
 
 const app = express();
 
-app.use("/notes", notesRouter);
-app.use("/db", dbRouter);
+app.use("/notes", dbRouter);
 
 module.exports = app;
