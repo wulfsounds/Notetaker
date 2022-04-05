@@ -8,25 +8,5 @@
         "title": "TESTING",
         "text": "1..2..3\n",
         "note_id": "a6f41e4e-6de1-4d74-8260-e97c0c469f02"
-    },
-    {
-        "title": "Hello",
-        "text": "Is it me you're looking for?",
-        "note_id": "eb11f266-0520-48f1-ac51-47f81d86c795"
-    },
-    {
-        "title": "YO!",
-        "text": "My Dude!",
-        "note_id": "6f2268b4-93e1-4610-bc49-e354af953a4e"
-    },
-    {
-        "title": "Let's do it again!",
-        "text": "YO!",
-        "note_id": "92f85065-86d1-46e2-8e0e-3e8b9d3ec4c7"
-    },
-    {
-        "title": "Hello This is a test",
-        "text": "Does this work?",
-        "note_id": "b1545bc7-ab85-4fbb-8a91-9b48712f075b"
     }
 ]
