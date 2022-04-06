@@ -28,25 +28,26 @@ app.get("/api/notes", (req, res) => {
 });
 
 // POST request method to add note;
+// POST request method to add note;
 app.post("/api/notes", (req, res) => {
-	let response;
-	const { title, text } = req.body;
-	if (title && text) {
-		const newNote = {
-			title,
-			text,
-			note_id: uuid.v4(),
-		};
-		response = {
-			status: "Success",
-			body: newNote,
-		};
-		readAndAppend(newNote, "./db/notes.json");
-		console.log(response);
-		res.status(201).json(response);
-	} else {
-		res.status(500).json("Error in posting note");
-	}
+    let response;
+    const { title, text } = req.body;
+    if (title && text) {
+        const newNote = {
+            title,
+            text,
+            note_id: uuid.v4(),
+        };
+        response = {
+            status: "Success",
+            body: newNote,
+        };
+        readAndAppend(newNote, `${__dirname}/db/notes.json`)
+        console.log(response);
+        res.status(201).json(response);
+    } else {
+        res.status(500).json("Error in posting note");
+    }
 });
 
 app.delete("/api/notes/:id", (req, res, next) => {
