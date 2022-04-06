@@ -1,4 +1,7 @@
 const { readFromFile, writeToFile } = require("../helpers/fsUtils");
+const db = require('../db/notes.json');
+
+//requir in json, do not use fs
 
 const notes = require("express").Router();
 
@@ -12,7 +15,7 @@ notes.post("/api/notes", (req, res) => {
 			status: "Success",
 			body: newNote,
 		};
-		readAndAppend(newNote, "./db/notes.json");
+		res.json(db);
 		console.log(response);
 		res.status(201).json(response);
 	} else {
@@ -30,7 +33,7 @@ notes.post("/notes", (req, res) => {
 			status: "Success",
 			body: newNote,
 		};
-		readAndAppend(newNote, "./db/notes.json");
+		res.json(db);
 		console.log(response);
 		res.status(201).json(response);
 	} else {
