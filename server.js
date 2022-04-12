@@ -41,7 +41,7 @@ app.post("/api/notes", (req, res) => {
 			status: "Success",
 			body: newNote,
 		};
-		readAndAppend(newNote, "./db/notes.json");
+		(newNote, "./db/notes.json");
 		console.log(response);
 		res.status(201).json(response);
 	} else {
